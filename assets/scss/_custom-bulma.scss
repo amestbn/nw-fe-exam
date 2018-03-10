@@ -56,6 +56,12 @@
       background-image: url('../img/pattern-yellow.gif');
     }
   }
+  &.is-primary-inverted {
+    background-color: $black;
+    .title {
+      color: $grey;
+    }
+  }
   .title {
   text-align: center;
   }
@@ -73,6 +79,18 @@
   img {
     max-height: 2.75rem;
   }
+}
+
+// Buttons
+.button {
+  background: $primary url('../img/btn-yellow-bg.gif');
+  border-radius: 0;
+  font-family: $family-heading;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.button.is-primary {
+  color: $black;
 }
 
 // Section-specific
@@ -97,5 +115,11 @@
   background: $black url('../img/nuworks-office.jpg') no-repeat center;
   .title {
     color: $white;
+  }
+}
+
+#our-partners {
+  #partners-btn {
+    margin-top: 2.75rem;
   }
 }
