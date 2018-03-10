@@ -31,7 +31,9 @@
   position: relative;
   background-attachment: fixed !important;
   background-size: cover !important;
+  overflow: hidden;
   .title {
+    margin-top: 3.75rem;
     color: $primary;
     font-style: italic;
     font-weight: 700;
@@ -130,7 +132,33 @@
         font-weight: 700;
         letter-spacing: normal;
         text-transform: lowercase;
+        margin-bottom: 2.25rem;
       }
+    }
+  }
+  .content-container {
+    align-self: center;
+  }
+  .storyteching {
+    position: relative;
+    height: 350px;
+    width: 300px;
+    margin: 0 auto;
+    img {
+      position: absolute;
+    }
+    .storyteching-people {
+      height: 130px;
+      top: 0;
+    }
+    .storyteching-tech {
+      height: 130px;
+      bottom: 0;
+    }
+    .storyteching-black {
+      top: 0;
+      right: 0;
+      height: 350px;
     }
   }
 }

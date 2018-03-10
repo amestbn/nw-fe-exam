@@ -59,7 +59,37 @@ var Capabilities = {
   }
 };
 
+var Navigation = {
+  setupBurgerMenu: function() {
+    var navbars = $('.navbar-burger');
+    $.each(navbars, function(i, value) {
+      $(value).on('click', function() {
+        var target = $(value).data('target');
+        $(value).toggleClass('is-active');
+        $('#' + target).toggleClass('is-active');
+      });
+    });
+  },
+  init: function() {
+    this.setupBurgerMenu();
+    $('.navbar-item').on('click', function(e) {
+      if(this.hash) {
+        e.preventDefault();
+        var hash = this.hash;
+        if($(hash).length > 0) {
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - 60
+          }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+      }
+    });
+  }
+};
+
 (function($){
   PartnersCarousel.init();
   Capabilities.init();
+  Navigation.init();
 })(jQuery);
