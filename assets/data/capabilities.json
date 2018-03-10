@@ -1,0 +1,32 @@
+[
+  {
+    "id": "cp-strategy",
+    "title": "Branding and Digital Strategy",
+    "description": "We are humanists. We intelligently exhaust both industry and in-house research tools and always begin work by picking up powerful insights from consumers.  From there, we then see how brands can play an impactful role in their story, including the use of big data analysis.",
+    "url": "capabilities/strategy.png"
+  },
+  {
+    "id": "cp-technology",
+    "title": "Creative Technology",
+    "description": "We craft and we are obsessed with innovative, futuristic technology that humanizes the brand and gives a consumer experience that’s relevant and worthwhile.",
+    "url": "technology.png"
+  },
+  {
+    "id": "cp-campaign",
+    "title": "Digital Campaigns",
+    "description": "Our personal goal is to always come up with campaigns that will move people. And through that, we realize our clients’ goals. We create and execute campaigns that cover all relevant touch points, including online and mobile, resulting in an integrated and completely compelling consumer experience.",
+    "url": "capabilities/digital-campaigns.png"
+  },
+  {
+    "id": "cp-social",
+    "title": "Social Media Management",
+    "description": "We’d love to keep a healthy relationship with our consumers. So as a constant communication tool, we come up with relevant content and social media activities that are both effective and sincere. We also create powerful social media command centers that enable brands to monitor what people are saying, as well as engage them in meaningful interaction.",
+    "url": "capabilities/smmanagement.png"
+  },
+  {
+    "id": "cp-media",
+    "title": "Media Management",
+    "description": "Big ideas get even bigger with sound digital strategy for media, including performance-based acquisition. And we make sure we have just that in every campaign that we do, whether big or small.",
+    "url": "capabilities/mediamanagement.png"
+  }
+]

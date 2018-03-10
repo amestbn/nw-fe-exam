@@ -34,6 +34,32 @@ var PartnersCarousel = {
   }
 };
 
+var Capabilities = {
+  init: function() {
+    $.getJSON('../assets/data/capabilities.json', function(data) {
+      var capabilities = '';
+      $.each(data, function(i, capability) {
+        capabilities += '<div id="' + capability.id + '" class="column capability"><img src="assets/img/' + capability.url + '" /><h3 class="title small-title is-block">' + capability.title + '</h3></div>'
+      });
+      $('#capabilities').append(capabilities);
+      $('.capability').on('click', function(e) {
+        var capability = data.find(function(value) {
+          return value.id === 'cp-strategy';
+        });
+        $('#capability-img').empty().append('<img src="assets/img/' + capability.url + '" class="image" />');
+        $('#capability-desc').empty().append('<h4 class="title small-title">' + capability.title + '</h4><p>' + capability.description + '</p>');
+        $('#capability-details').addClass('active');
+        $('#capabilities').addClass('hide');
+      });
+      $('#close-capability').on('click', function() {
+        $('#capability-details').removeClass('active');
+        $('#capabilities').removeClass('hide');
+      });
+    });
+  }
+};
+
 (function($){
   PartnersCarousel.init();
+  Capabilities.init();
 })(jQuery);
