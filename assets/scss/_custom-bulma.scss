@@ -1,0 +1,13 @@
+// Navbar
+.navbar-item,
+.navbar-link {
+  font-family: $family-heading;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.navbar-item {
+  img {
+    max-height: 2.75rem;
+  }
+}
