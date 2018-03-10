@@ -1,3 +1,4 @@
+
 // Modifiers
 .is-fullheight {
   height: 100vh;
@@ -69,6 +70,12 @@
   .title {
     text-align: center;
   }
+  .column {
+    .container {
+      padding: 0 1.5rem;
+      width: 100%;
+    }
+  }
 }
 
 // Navbar
@@ -93,8 +100,19 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+.button.is-small {
+  border-radius: 0;
+}
 .button.is-primary {
   color: $black;
+  &.is-inverted {
+    color: $primary !important;
+    background-color: $black;
+    background-image: none;
+    &:hover {
+      background-color: $black;
+    }
+  }
 }
 
 // Section-specific
@@ -197,3 +215,47 @@
   }
 }
 
+#contact {
+  padding: 0;
+  .column {
+    padding: 3rem 1.5rem;
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  &.is-primary-inverted {
+    address {
+      color: $grey-dark;
+      font-size: 0.875rem;
+      font-style: normal;
+      margin-bottom: 2.25rem;
+    }
+    a {
+      color: $white;
+      &.button {
+        color: $black;
+      }
+    }
+  }
+  #map {
+    background-image: url('../img/map.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    #map-btn {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 1.5rem;
+    }
+    @media (max-width: 728px) {
+      height: 100%;
+    }
+  }
+  .nw-logo {
+    width: 37%;
+    min-width: 200px;
+  }
+}
