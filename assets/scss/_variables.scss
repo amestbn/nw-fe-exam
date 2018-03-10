@@ -1,12 +1,18 @@
 // Colors
 $yellow: #f7ec15;
+$black: #000;
 
 // Typography
 $family-heading: "Titillium Web", "Arial", sans-serif;
 $family-serif: "Georgia", "Times New Roman", serif;
+$family-sans-serif: "Nunito Sans", sans-serif;
 
 // Derived variables
 $primary: $yellow;
+$body-color: $black;
+
+// Title
+$title-color: $black;
 
 //Navbar
 $navbar-background-color: $primary;
