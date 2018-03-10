@@ -1,3 +1,30 @@
+// Hero
+.hero {
+  position: relative;
+  .title {
+    color: $primary;
+    font-family: $family-heading;
+    font-style: italic;
+    letter-spacing: 12px;
+    font-size: 2.25rem;
+  }
+  .subtitle {
+    color: $white;
+    font-family: $family-serif;
+    font-size: 0.875rem;
+    font-style: italic;
+    text-transform: uppercase;
+  }
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url('../img/pattern-overlay.png');
+  }
+}
+
 // Navbar
 .navbar-item,
 .navbar-link {
@@ -10,4 +37,11 @@
   img {
     max-height: 2.75rem;
   }
+}
+
+// Section-specific
+#introduction {
+  background: url('../img/hero-1.jpg') no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
 }
